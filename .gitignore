@@ -1,0 +1,17 @@
+.idea
+out
+*.iml
+*.xml
+*.class
+*.vscode
+*.bin
+*.lib
+
+### CodeBlocks ###
+# specific to CodeBlocks IDE
+*.layout
+*.depend
+*.cbp
+# generated directories
+bin/
+obj/
