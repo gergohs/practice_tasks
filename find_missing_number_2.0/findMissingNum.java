@@ -3,7 +3,7 @@ import java.util.*;
 #1: ArrayList to store mixed numbers from 1 to 20 - the ArrayList can be expandable
 #2: Shuffling the original list
 #3: Calculate the sum of the elements in the ArrayList
-#4: Remove an element from the list (6 is just a sample number)
+#4: Remove a random element from the list
 #5: Find the missing element, using for:each statement to iterate through the ArrayList
 */
 public class findMissingNum {
@@ -18,7 +18,9 @@ public class findMissingNum {
 // #3
         int sumOfElements = (listForCheck.size() * (listForCheck.size() + 1)) / 2;
 // #4
-        listForCheck.remove(listForCheck.size() - 8);
+        Random randNum = new Random();
+        int randomELement = randNum.nextInt(20);
+        listForCheck.remove(listForCheck.size() - randomELement);
         System.out.println("Remove an element: " + listForCheck + "\n");
 // #5
         for (Integer elementOfList : listForCheck) {
