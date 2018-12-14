@@ -19,7 +19,7 @@ public class findMissingNum {
         int sumOfElements = (listForCheck.size() * (listForCheck.size() + 1)) / 2;
 // #4
         Random randNum = new Random();
-        int randomELement = randNum.nextInt(20);
+        int randomELement = randNum.nextInt(listForCheck.size());
         listForCheck.remove(listForCheck.size() - randomELement);
         System.out.println("Remove an element: " + listForCheck + "\n");
 // #5
