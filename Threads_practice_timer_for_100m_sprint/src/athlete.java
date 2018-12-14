@@ -4,7 +4,7 @@ public class athlete implements Runnable {
     private String name;
     private int time;
     private Random rand = new Random();
-    private int rangeLow = 6000;
+    private int rangeLow = 9580;
     private int rangeHigh = 15000;
 
     athlete(String name) {
